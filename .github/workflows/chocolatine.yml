@@ -2,10 +2,10 @@ name: chocolatine
 on: [push]
 jobs:
   check_repository_cleanliness
-  action-chekout:
+  action-checkout:
     runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
-        with:
-          fetch-death: 0
-        run: find -name .a
+          with:
+            fetch-death: 0
+            run: find -name .a
