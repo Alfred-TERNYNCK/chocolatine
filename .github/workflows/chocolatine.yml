@@ -1,7 +1,6 @@
 name: chocolatine
 on: [push]
 jobs:
-  check_repository_cleanliness
   run-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
