@@ -2,12 +2,12 @@ name: chocolatine
 on: [push]
 jobs:
   run-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-death: 0
-          run: find -name .a
-      - uses: pixta-dev/repository-mirroring-action@v1
+  steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-death: 0
+        run: find -name .a
+    - uses: pixta-dev/repository-mirroring-action@v1
       with:
         target_repo_url:
           git@github.com:EpitechPromo2026/B-DOP-200-PAR-2-1-chocolatine-alfred.ternynck.git
