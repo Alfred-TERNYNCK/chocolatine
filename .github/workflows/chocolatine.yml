@@ -2,7 +2,7 @@ name: chocolatine
 on: [push]
 jobs:
   action-checkout:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
