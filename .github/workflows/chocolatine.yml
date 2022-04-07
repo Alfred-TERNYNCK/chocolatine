@@ -1,7 +1,8 @@
 name: chocolatine
-on: push
-  branches-ignore:
-    - 'ga-ignore-'
+on: 
+  push:
+    branches-ignore:
+      - 'ga-ignore-'
   pull_request:
     branches-ignore:
       - 'ga-ignore-'
