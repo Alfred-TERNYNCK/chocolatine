@@ -1,9 +1,15 @@
 name: chocolatine
 on: push
+  branches-ignore:
+    - 'ga-ignore-'
+  pull_request:
+    branches-ignore:
+      - 'ga-ignore-'
 
   ENV:
     MIRROR_URL: git@github.com:EpitechPromo2026/B-DOP-200-PAR-2-1-chocolatine-alfred.ternynck.git
     EXECUTABLES: a.out
+    
 jobs:
   action-checkout:
     runs-on: ubuntu-latest
