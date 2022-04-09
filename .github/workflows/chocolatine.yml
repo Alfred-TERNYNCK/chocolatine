@@ -18,7 +18,13 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-death: 0
-      - run: find -name .swp
+      - name: file.#
+        run: |
+        FILE2=$(find . -name *.#)
+          if [[ -n "$FILE2" ]]; then
+          echo "::error file=$FILE2, line=1,col=5,endColumn=7::"
+          exit 1
+          fi
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
           target_repo_url:
