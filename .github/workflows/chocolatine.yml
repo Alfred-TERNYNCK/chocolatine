@@ -101,4 +101,4 @@ jobs:
           target_repo_url:
             git@github.com:Alfred-TERNYNCK/chocolatine.git
           ssh_private_key:
-            ${{ SSH_SECRETS }}
+            ${{ secrets.SSH_SECRETS }}
