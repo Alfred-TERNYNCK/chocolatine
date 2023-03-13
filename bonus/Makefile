@@ -16,8 +16,7 @@ SRC		= src/main.c \
 			src/selector.c \
 			src/utils.c \
 			src/flag_l.c \
-            src/color.c \
-			src/flag_r.c
+            src/color.c
 
 OBJ		= $(SRC:.c=.o)
 
